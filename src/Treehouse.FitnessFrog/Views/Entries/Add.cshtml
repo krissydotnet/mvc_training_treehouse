@@ -10,10 +10,10 @@
 <!-- Adding true displays only global messages -->
 @*@Html.ValidationSummary(true)*@
 
-@Html.ValidationSummary("The following errors were found:", new { @class = "alert alert-danger" })
 
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary("The following errors were found:", new { @class = "alert alert-danger" })
 
     <div class="row">
 
